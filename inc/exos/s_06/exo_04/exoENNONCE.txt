@@ -1,5 +1,3 @@
-Exercice 6.4
-
 Que produit l’algorithme suivant ?
 Tableau Nb(5) en Entier
 Variable i en Entier

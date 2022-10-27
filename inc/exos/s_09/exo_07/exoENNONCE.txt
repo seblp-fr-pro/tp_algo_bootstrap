@@ -1,4 +1,2 @@
-Exercice 9.7
-
 Ecrivez un algorithme qui demande un nombre entier à l’utilisateur. L’ordinateur affiche ensuite le message "Ce
 nombre est pair" ou "Ce nombre est impair" selon le cas.

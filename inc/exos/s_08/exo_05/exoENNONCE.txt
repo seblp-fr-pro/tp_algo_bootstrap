@@ -1,5 +1,3 @@
-Exercice 8.5
-
 Mêmes questions, en remplaçant la ligne :
 T(k, m) ← k + m
 par

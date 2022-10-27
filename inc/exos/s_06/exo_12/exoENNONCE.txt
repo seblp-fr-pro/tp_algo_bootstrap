@@ -1,4 +1,2 @@
-Exercice 6.12
-
 Ecrivez un algorithme qui permette la saisie d’un nombre quelconque de valeurs, sur le principe de l’ex 6.8. Toutes
 les valeurs doivent être ensuite augmentées de 1, et le nouveau tableau sera affiché à l’écran.

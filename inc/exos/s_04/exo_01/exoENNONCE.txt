@@ -1,5 +1,3 @@
-Exercice 4.1
-
 Formulez un algorithme équivalent à l’algorithme suivant :
 Si Tutu > Toto + 4 OU Tata = "OK" Alors
 Tutu ← Tutu + 1

@@ -1,5 +1,3 @@
-Exercice 6.14
-
 Toujours et encore sur le même principe, écrivez un algorithme permettant, à l’utilisateur de saisir les notes d'une
 classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes supérieures à la moyenne de la
 classe.

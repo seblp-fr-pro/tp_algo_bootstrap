@@ -1,5 +1,3 @@
-Exercice 9.5
-
 Ecrivez un algorithme qui demande une phrase à l’utilisateur. Celui-ci entrera ensuite le rang d’un caractère à
 supprimer, et la nouvelle phrase doit être affichée (on doit réellement supprimer le caractère dans la variable qui
 stocke la phrase, et pas uniquement à l’écran).

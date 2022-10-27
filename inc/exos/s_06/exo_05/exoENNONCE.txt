@@ -1,5 +1,3 @@
-Exercice 6.5
-
 Que produit l’algorithme suivant ?
 Tableau N(6) en Entier
 Variables i, k en Entier

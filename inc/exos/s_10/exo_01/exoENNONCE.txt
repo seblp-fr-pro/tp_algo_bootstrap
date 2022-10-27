@@ -1,5 +1,3 @@
-Exercice 10.1
-
 Quel résultat cet algorithme produit-il ?
 Variable Truc en Caractère
 Début

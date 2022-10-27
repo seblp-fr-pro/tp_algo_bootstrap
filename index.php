@@ -8,8 +8,6 @@
 
     <!-- CSS STYLE scripts  -->
         <?php require('inc/css_inc.php');?>
-
-    <title>TP Algo / Bootstrap / CRUD</title>
 </head>
 
 <body>

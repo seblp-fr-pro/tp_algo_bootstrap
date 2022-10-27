@@ -1,5 +1,3 @@
-Exercice 7.1
-
 Ecrivez un algorithme qui permette de saisir un nombre quelconque de valeurs, et qui les range au fur et à mesure
 dans un tableau. Le programme, une fois la saisie terminée, doit dire si les éléments du tableau sont tous consécutifs
 ou non.

@@ -1,3 +1,1 @@
-Exercice 6.1
-
 Ecrire un algorithme qui déclare et remplisse un tableau de 7 valeurs numériques en les mettant toutes à zéro.

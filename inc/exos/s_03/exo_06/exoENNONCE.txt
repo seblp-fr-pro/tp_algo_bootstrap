@@ -1,5 +1,3 @@
-Exercice 3.6
-
 Ecrire un algorithme qui demande l’âge d’un enfant à l’utilisateur. Ensuite, il l’informe de sa catégorie :
 •"Poussin" de 6 à 7 ans
 •"Pupille" de 8 à 9 ans

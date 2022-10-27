@@ -1,5 +1,3 @@
-Exercice 1.8
-
 Variables A, B, C en Caractères
 Début
 A ← "573"

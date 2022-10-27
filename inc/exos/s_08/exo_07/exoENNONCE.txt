@@ -1,5 +1,3 @@
-Exercice 8.7
-
 Écrire un algorithme de jeu de dames très simplifié.
 L’ordinateur demande à l’utilisateur dans quelle case se trouve son pion (quelle ligne, quelle colonne). On met en
 place un contrôle de saisie afin de vérifier la validité des valeurs entrées.

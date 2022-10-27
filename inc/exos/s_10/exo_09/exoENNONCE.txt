@@ -1,5 +1,3 @@
-Exercice 10.9
-
 Les enregistrements d’un fichier contiennent les deux champs Nom (chaîne de caractères) et Montant (Entier).
 Chaque enregistrement correspond à une vente conclue par un commercial d’une société.
 On veut mémoriser dans un tableau, puis afficher à l'écran, le total de ventes par vendeur. Pour simplifier, on

@@ -1,5 +1,3 @@
-Exercice 6.6
-
 Que produit l’algorithme suivant ?
 Tableau Suite(7) en Entier
 Variable i en Entier

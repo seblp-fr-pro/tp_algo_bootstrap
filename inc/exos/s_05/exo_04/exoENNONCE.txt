@@ -1,3 +1,1 @@
-Exercice 5.4
-
 Réécrire l'algorithme précédent, en utilisant cette fois l'instruction Pour

@@ -1,5 +1,3 @@
-Exercice 9.6
-
 Un des plus anciens systèmes de cryptographie (aisément déchiffrable) consiste à décaler les lettres d’un message
 pour le rendre illisible. Ainsi, les A deviennent des B, les B des C, etc. Ecrivez un algorithme qui demande une phrase
 à l’utilisateur et qui la code selon ce principe. Comme dans le cas précédent, le codage doit s’effectuer au niveau de

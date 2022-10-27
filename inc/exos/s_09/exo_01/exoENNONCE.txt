@@ -1,5 +1,3 @@
-Exercice 9.1
-
 Parmi ces affectations (considérées indépendamment les unes des autres), lesquelles provoqueront des erreurs, et
 pourquoi ?
 Variables A, B, C en Numérique

@@ -1,5 +1,3 @@
-Exercice 6.11
-
 Toujours à partir de deux tableaux précédemment saisis, écrivez un algorithme qui calcule le « Toon » des deux
 tableaux. Pour calculer le « Toon », il faut multiplier chaque élément du tableau 1 par chaque élément du tableau 2,
 et additionner le tout. Par exemple si l'on a :

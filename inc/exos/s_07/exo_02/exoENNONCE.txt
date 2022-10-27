@@ -1,4 +1,2 @@
-Exercice 7.2
-
 Ecrivez un algorithme qui trie un tableau dans l’ordre décroissant.
 Vous écrirez bien entendu deux versions de cet algorithme, l'une employant le tri par insertion, l'autre le tri à bulles.

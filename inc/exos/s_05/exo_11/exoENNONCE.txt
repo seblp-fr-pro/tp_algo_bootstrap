@@ -1,5 +1,3 @@
-Exercice 5.11
-
 Écrire un algorithme qui permette de connaître ses chances de gagner au tiercé, quarté, quinté et autres impôts
 volontaires.
 On demande à l’utilisateur le nombre de chevaux partants, et le nombre de chevaux joués. Les deux messages

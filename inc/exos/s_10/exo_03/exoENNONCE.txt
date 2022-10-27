@@ -1,5 +1,3 @@
-Exercice 10.3
-
 On travaille avec le fichier du carnet d’adresses en champs de largeur fixe.
 Ecrivez un algorithme qui permet à l’utilisateur de saisir au clavier un nouvel individu qui sera ajouté à ce carnet
 d’adresses.

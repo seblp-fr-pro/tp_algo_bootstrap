@@ -1,5 +1,3 @@
-Exercice 7.4
-
 Ecrivez un algorithme qui permette à l’utilisateur de supprimer une valeur d’un tableau préalablement saisi.
 L’utilisateur donnera l’indice de la valeur qu’il souhaite supprimer. Attention, il ne s’agit pas de remettre une valeur
 à zéro, mais bel et bien de la supprimer du tableau lui-même ! Si le tableau de départ était :
