@@ -2,7 +2,7 @@
         <!-- ========================================================================= BEGIN of CUSTOM CSS stylesheet ========================================================================= -->
 
             <!-- BOOTSTRAP CSS for ALL and COMMON projects -->
-            <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+            <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
         <!-- PRISM CSS for tp_algo -->
             <link rel="stylesheet" href="css/prism/prism.css">
