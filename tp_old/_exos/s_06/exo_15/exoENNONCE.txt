@@ -1,0 +1,7 @@
+Exercice 6.15
+
+Pour sa naissance, la grand-mère de TITI place une somme de 1000 Euros sur son compte épargne rémunéré
+au taux de 2.75% (chaque année le compte est augmenté de 2.75%). Développer un algorithme permettant
+de stocker dans un tableau sur 20 ans associant à chaque anniversaire de TITI la somme acquise sur son compte.
+Puis, la grand-mère de TITI aura la possibilité de saisir un âge (compris entre 1 et 20 ans) et l'algorithme affichera la
+somme correspondante qu'il y'aura alors sur le compte.

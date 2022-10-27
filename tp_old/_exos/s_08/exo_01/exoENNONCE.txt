@@ -1,0 +1,3 @@
+Exercice 8.1
+
+Écrivez un algorithme remplissant un tableau de 6 sur 13, avec des zéros.

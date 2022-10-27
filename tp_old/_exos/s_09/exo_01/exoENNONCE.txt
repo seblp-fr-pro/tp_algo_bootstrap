@@ -1,0 +1,11 @@
+Exercice 9.1
+
+Parmi ces affectations (considérées indépendamment les unes des autres), lesquelles provoqueront des erreurs, et
+pourquoi ?
+Variables A, B, C en Numérique
+Variable D en Caractère
+A ← Sin(B)
+A ← Sin(A + B * C)
+B ← Sin(A) – Sin(D)
+C ← Sin(A / B)
+C ← Cos(Sin(A)

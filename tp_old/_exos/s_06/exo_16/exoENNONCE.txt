@@ -1,0 +1,4 @@
+Exercice 6.16
+Ecrire un algorithme permettant de résoudre le problème suivant :
+– Données : un tableau tableau contenant 100 entiers
+– Résultat : “vrai” si les entiers sont consécutifs et “faux” sinon

@@ -1,0 +1,132 @@
+.listeBOUTONS{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.txtPRINCIPALparent{
+    position: relative;
+
+    height: 71vh;
+    width: 100%;
+
+    top: 0;
+    left: 20px
+
+    white-space: pre-wrap;
+
+    display:flex;
+    flex-direction: row;
+    
+
+}
+
+#numeroEXERCICE{
+    position: absolute;
+    background-color: #424558;
+    color:white;
+
+    transform : rotate(-90deg);
+    text-align: center;
+
+    height: 45px;
+
+    padding: 10px;
+    width:40vh;
+
+    border-radius: 5px;
+
+    top: 18vh;
+    left: -9.6vw;
+
+    color: white;
+
+    font-size: larger;
+    z-index: -1;
+}
+
+.txtPRINCIPALparent
+    > #txtPRINCIPALenfantENNONCE{
+        position: absolute;
+
+        background-color: #424558;
+        color:white;
+
+        height: 71vh;
+        width: 97%;
+
+        border-radius: 5px;
+        padding: 10px;
+
+        visibility: visible;
+}
+
+.txtPRINCIPALparent
+    > #txtPRINCIPALenfantPSEUDO{
+        position: absolute;
+
+        background-color: #424558;
+        color:white;
+
+        height: 71vh;
+        width: 97%;
+
+        border-radius: 5px;
+        padding: 10px;
+        visibility: hidden;
+}
+
+.txtPRINCIPALparent
+    > #txtPRINCIPALenfantJS{
+        position: absolute;
+
+        background-color: #424558;
+        color:white;
+
+        height: 71vh;
+        width: 97%;
+
+        border-radius: 5px;
+        padding: 10px;
+        visibility: hidden;
+    }
+
+.txtPRINCIPALparent
+    > #txtPRINCIPALenfantJQ{
+        position: absolute;
+
+        background-color: #424558;
+        color:white;
+
+        height: 71vh;
+        width: 97%;
+
+        border-radius: 5px;
+        padding: 10px;
+        visibility: hidden;
+}
+
+.txtPRINCIPALparent
+    > #txtPRINCIPALenfantPHP{
+        position: absolute;
+
+        background-color: #424558;
+        color:white;
+
+        height: 71vh;
+        width: 97%;
+
+        border-radius: 5px;
+        padding: 10px;
+        visibility: hidden;
+    }
+
+#resultatSORTIE{
+    padding: 10px;
+    background-color: #424558;
+    color: white;
+    height: 71vh;
+    border-radius: 5px;
+    
+    white-space: pre-wrap;
+}

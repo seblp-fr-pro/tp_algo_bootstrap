@@ -1,0 +1,17 @@
+Exercice 8.4
+
+Quel résultat produira cet algorithme ?
+Tableau T(3, 1) en Entier
+Variables k, m, en Entier
+Début
+Pour k ← 0 à 3
+Pour m ← 0 à 1
+T(k, m) ← k + m
+m Suivant
+k Suivant
+Pour k ← 0 à 3
+Pour m ← 0 à 1
+Ecrire T(k, m)
+m Suivant
+k Suivant
+Fin

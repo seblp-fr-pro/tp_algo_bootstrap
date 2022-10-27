@@ -1,0 +1,9 @@
+Exercice 1.9
+
+Que produit l’algorithme suivant ?
+Variables A, B, C en Caractères
+Début
+A ← "573"
+B ← "19"
+C ← A & B
+Fin

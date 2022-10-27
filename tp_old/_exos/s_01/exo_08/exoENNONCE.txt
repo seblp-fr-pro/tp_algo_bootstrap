@@ -1,0 +1,8 @@
+Exercice 1.8
+
+Variables A, B, C en Caractères
+Début
+A ← "573"
+B ← "19"
+C ← A + B
+Fin

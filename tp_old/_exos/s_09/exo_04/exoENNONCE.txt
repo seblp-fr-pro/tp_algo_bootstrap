@@ -1,0 +1,6 @@
+Exercice 9.4
+
+Ecrivez un algorithme qui demande une phrase à l’utilisateur et qui affiche à l’écran le nombre de voyelles contenues
+dans cette phrase.
+On pourra écrire deux solutions. La première déploie une condition composée bien fastidieuse. La deuxième, en
+utilisant la fonction Trouve, allège considérablement l'algorithme.

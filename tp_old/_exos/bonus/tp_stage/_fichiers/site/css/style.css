@@ -1,0 +1,33 @@
+html{
+    overflow: hidden;
+}
+
+#build-nav {
+    position: absolute;
+    top: -4px;
+    left: -2px;
+
+    width: 101vw;
+    z-index: 100;
+}
+
+#photo-nav {
+    position: absolute;
+    top: 0px;
+    right: 0vw;
+
+    width: 17vw;
+    opacity: 0.2;
+    z-index: 99;
+}
+
+footer img{
+    position: absolute;
+
+    bottom: -2px;
+    left: -2px;
+
+    width: 101vw;
+    z-index:100;
+    
+}

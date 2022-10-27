@@ -1,0 +1,5 @@
+Exercice 2.4
+
+Ecrire un algorithme utilisant des variables de type chaîne de caractères, et affichant quatre variantes
+possibles de la célèbre « belle marquise, vos beaux yeux me font mourir d’amour ». On ne se soucie pas de
+la ponctuation, ni des majuscules.

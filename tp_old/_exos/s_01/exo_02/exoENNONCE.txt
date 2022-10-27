@@ -1,0 +1,9 @@
+Quelles seront les valeurs des variables A, B et C après exécution des instructions suivantes ?
+Variables A, B, C en Entier
+Début
+A ← 51
+B ← 34
+C ← A + B
+A ← 21
+C ← B – A
+Fin

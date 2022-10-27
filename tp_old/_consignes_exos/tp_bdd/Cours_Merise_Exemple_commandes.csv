@@ -1,0 +1,55 @@
+Enoncé;;;;;
+Une entreprise gère des commandes de produits.;;;;;
+Chaque commande possède un numéro de commande unique, ainsi que d’une date où la commande a été réalisée.;;;;;
+On sait qu’une commande n’existe qu’à partir du moment où elle a au moins un produit dedans.;;;;;
+Concernant les produits, ils ont une désignation, et on connait leur quantité en stock. ;;;;;
+Ces produits sont également regroupés par famille de produits. On gere egalement le nombre de produits commandés par commandes;;;;;
+;;;;;
+"Relever les données en ""brute""";;;;;
+numéro de commande;;;;;
+date de commande;;;;;
+désignation du produit;;;;;
+quantité stock produit;;;;;
+famille produit;;;;;
+quantité commandée;;;;;
+;;;;;
+Les entités;;;;;
+commande;;;;;
+produit;;;;;
+famille;;;;;
+;;;;;
+Les règles;;;;;
+une commande contient 1 à plusieurs produits;;;;;
+un produit est contenu dans 0 à plusieurs commandes;;;;;
+un produit appartient à 1 et 1 seule famille;;;;;
+une famille contient 0 à plusieurs produits;;;;;
+;;;;;
+Dictionnaire de données;;;;;
+;;;;;
+entité;Code mnémonique;Désignation;type de donnée;Taille;Remarques
+commande;id_commande;identifiant unique de la commande;Numerique;11;en auto incrémentation
+;numero_commande;;Alpha Numérique;20;
+;date_commande;;date;10;aaaa-mm-jj
+;;;;;
+produit;id_produit;identifiant unique du produit;Numerique;11;en auto incrémentation
+;designation_produit;;Alpha Numérique;50;
+;quantite_stock_produit;;Numerique;3;
+;;;;;
+famille;id_famille;identifiant unique de la famille;Numerique;11;en auto incrémentation
+;designation_famille;;Alpha Numérique;50;
+;;;;;
+;;;;;
+;quantite_commandee;quantité de produit commandé par commande;Numérique;3;
+;;;;;
+Dépendances fonctionnelles;;;;;
+"on commence par le ""id"" de l'entité";;;;;
+on suit d'une flèche ->;;;;;
+on liste tous les champs de l'entité;;;;;
+Ensuite, on regarde les règles de gestion métiers, toutes celles qui commencent par la dite entité;;;;;
+;"et de ça, on regarde uniquement les règles dites de quantité ""simple""";;;;
+;"Et dans ce cas, on ajoute le ""id"" de l'entité de la fin de la phrase";;;;
+;;;;;
+id_commande -> numero_commande, date_commande;;;;;
+id_produit -> designation_produit, quantite_stock_produit, id_famille;;;;;
+id_famille -> designation_famille;;;;;
+id_commande, id_produit -> quantite_commandee;;;;;

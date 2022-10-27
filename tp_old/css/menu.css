@@ -1,0 +1,161 @@
+body
+{
+    font-family: Arial;
+    margin:	0px;
+    padding: 0px;
+    background-color: #6B6868;
+}
+
+nav{
+    z-index: 150;
+}
+
+nav > ul {
+    display: flex;
+    justify-content:space-around;
+}
+
+nav > ul::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li > a
+{
+    padding: 5px 15px;
+}
+
+.submenu li
+{
+    border-bottom: 1px solid #CCC;
+}
+
+.submenu li a
+{
+    padding: 10px 15px;
+    font-size: 10px;
+    color: #222538;
+}
+
+.subsubmenu li
+{
+    border-bottom: 1px solid #CCC;
+}
+
+.menu-home:hover
+{
+    background-color: #F61313;
+}
+
+.menu-about:hover
+{
+    background-color: #F61313;
+}
+
+.menu-portfolio:hover
+{
+    background-color: #F61313;
+}
+
+.menu-blog:hover
+{
+    background-color: #F61313;
+}
+
+.menu-categories:hover
+{
+    background-color: #F61313;
+}
+
+.menu-contact:hover
+{
+    background-color: #F61313;
+}
+
+.menu-sitemap:hover
+{
+    background-color: #F61313;
+}
+
+nav > ul > li:hover a
+{
+    padding: 5px 15px 5px 15px;
+}
+
+.menu-portfolio .subsubmenu li:hover
+{
+    background-color: #F61313;
+}
+
+ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #424558;
+}
+
+ul li 
+{
+    display: block;
+    position: relative;
+    float: left;
+    background-color: #424558;
+}
+
+li ul
+{
+    display: none; 
+}
+
+ul li a 
+{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover 
+{
+    background-color: #F61313; 
+}
+
+li:hover > ul 
+{
+    display: block;
+    position: absolute;
+}
+
+li:hover li 
+{ 
+    float: none; 
+}
+
+.submenu > *
+{
+    background-color: white;
+}
+
+.subsubmenu > *
+{
+    background-color: white;
+}
+
+li:hover li a:hover 
+{
+    background-color: #F61313; 
+}
+
+li:hover, .subsubmenu:hover 
+{
+    background-color: #F61313; 
+}
+
+ul ul ul 
+{
+    left: 100%;
+    top: 0;
+}

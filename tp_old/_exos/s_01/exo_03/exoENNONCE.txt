@@ -1,0 +1,7 @@
+Variables A, B en Entier
+Début
+A ← 49
+B ← A + 4
+A ← A + 1
+B ← A – 4
+Fin
