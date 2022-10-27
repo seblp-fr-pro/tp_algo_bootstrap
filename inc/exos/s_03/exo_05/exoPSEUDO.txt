@@ -1,0 +1,24 @@
+Variables iNombre1, iNombre2 en entier
+
+DEBUT
+    ECRIRE "Entrez un nombre"
+    LIRE iNombre1
+
+    ECRIRE "Entrez 2nd nombre"
+    LIRE iNombre2
+
+            // 2 cas où le produit est positif
+            // soit les 2 nombres sont positifs
+            // soit les 2 nombres sont négatifs
+
+            // le produit est nul quand
+            // un des nombres vaut 0
+
+    SI ((iNombre1 > 0) && (iNombre2 > 0)) || ((iNombre1 < 0) && (iNombre2 < 0)) ALORS
+        ECRIRE "Votre produit sera positif"
+    SINONSI (iNombre1 = 0) || (iNombre2 = 0)
+        ECRIRE "Votre produit sera nul"
+    SINON
+        ECRIRE "Votre produit sera négatif"
+    FIN SI
+FIN

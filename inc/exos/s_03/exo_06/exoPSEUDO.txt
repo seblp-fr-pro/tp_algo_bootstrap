@@ -1,0 +1,20 @@
+Variables iAge en entier
+
+DEBUT
+     ECRIRE "Entrez l'age de votre enfant"
+     LIRE iAge
+     
+     SI iAge >= 12 ALORS
+
+    ECRIRE "Cadet"
+    SINONSI iAge >= 10 ALORS
+    ECRIRE "Minime"
+    SINONSI iAge >= 8 ALORS
+    ECRIRE "Pupille"
+    SINONSI iAge >= 6 ALORS
+    ECRIRE "Poussin"
+    SINON
+    ECRIRE Votre enfant est trop jeune pour nos activités acrobatiques et athlétiques
+
+     FINSI
+FIN

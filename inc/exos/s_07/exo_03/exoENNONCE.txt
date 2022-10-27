@@ -1,0 +1,4 @@
+Exercice 7.3
+
+Ecrivez un algorithme qui inverse l’ordre des éléments d’un tableau dont on suppose qu'il a été préalablement saisi
+(« les premiers seront les derniers... »)

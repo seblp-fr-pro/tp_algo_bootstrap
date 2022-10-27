@@ -1,0 +1,8 @@
+Quelles seront les valeurs des variables A et B après exécution des instructions suivantes ?
+
+Variables A, B en Entier
+Début
+A ← 17
+B ← A + 2
+A ← 9
+Fin

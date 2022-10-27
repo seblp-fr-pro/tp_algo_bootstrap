@@ -1,0 +1,5 @@
+Exercice 10.2
+
+Ecrivez l’algorithme qui produit un résultat similaire au précédent, mais le fichier texte "Exemple.txt" est cette fois
+de type délimité (caractère de délimitation : /). On produira à l'écran un affichage où pour des raisons esthétiques,
+ce caractère sera remplacé avec des espaces.

@@ -1,0 +1,9 @@
+Exercice 9.8
+
+Ecrivez les algorithmes qui génèrent un Glup aléatoire tel que ...
+ 0 =< Glup =< 2
+ –1 =< Glup =< 1
+ 1,35 =< Glup =< 1,65
+ Glup émule un dé à six faces
+ –10,5 =< Glup =< +6,5
+ Glup émule la somme du jet simultané de deux dés à six faces

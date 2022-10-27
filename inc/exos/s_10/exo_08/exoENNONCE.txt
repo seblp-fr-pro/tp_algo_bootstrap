@@ -1,0 +1,5 @@
+Exercice 10.8
+
+Ecrire un algorithme qui supprime dans notre carnet d'adresses tous les individus dont le mail est invalide (pour
+employer un critère simple, on considèrera que sont invalides les mails ne comportant aucune arobase, ou plus
+d'une arobase).

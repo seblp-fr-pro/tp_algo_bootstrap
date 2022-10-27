@@ -1,0 +1,16 @@
+Variables nom_1, nom_2, nom_3 en alphanumerique
+
+DEBUT
+    ECRIRE "Entrez un 1er nom"
+    LIRE nom_1
+    ECRIRE "Entrez un 2nd nom"
+    LIRE nom_2
+    ECRIRE "Entrez un 3eme nom"
+    LIRE nom_3
+
+    SI ((nom_1 < nom_2) ET (nom_2 < nom_3)) ALORS
+        ECRIRE "Les noms sont rangés dans l'ordre alphabétique"
+    SINON
+        ECRIRE "Les noms ne sont pas rangés dans l'ordre alphabétique"
+    FIN SI
+FIN

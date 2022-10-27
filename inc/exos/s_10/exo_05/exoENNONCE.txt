@@ -1,0 +1,5 @@
+Exercice 10.5
+
+Ecrivez un algorithme qui permette de modifier un renseignement (pour simplifier, disons uniquement le nom de
+famille) d’un membre du carnet d’adresses. Il faut donc demander à l’utilisateur quel est le nom à modifier, puis quel
+est le nouveau nom, et mettre à jour le fichier. Si le nom recherché n'existe pas, le programme devra le signaler.

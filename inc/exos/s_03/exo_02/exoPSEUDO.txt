@@ -1,0 +1,15 @@
+Variables iNombre1, iNombre2 en entier
+
+DEBUT
+    ECRIRE "Entrez un nombre"
+    LIRE iNombre1
+
+    ECRIRE "Entrez 2nd nombre"
+    LIRE iNombre2
+
+    SI (iNombre1 < 0) XOR (iNombre2 < 0) ALORS
+        ECRIRE "Votre nombre est négatif"
+    SINON
+        ECRIRE "Votre nombre est positif"
+    FIN SI
+FIN

@@ -1,0 +1,4 @@
+Exercice 6.17
+
+Ecrire un algorithme permettant de saisir 100 valeurs et qui les range au fur et à mesure dans un tableau. Cela
+s'appelle le tri à la volée (qui est une forme de tri par insertion)

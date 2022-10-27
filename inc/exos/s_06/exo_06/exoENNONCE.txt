@@ -1,0 +1,14 @@
+Exercice 6.6
+
+Que produit l’algorithme suivant ?
+Tableau Suite(7) en Entier
+Variable i en Entier
+Début
+Suite(0) ← 1
+Suite(1) ← 1
+Pour i ← 2 à 7
+Suite(i) ← Suite(i-1) + Suite(i-2)
+i suivant
+Pour i ← 0 à 7
+Ecrire Suite(i)
+i suivant

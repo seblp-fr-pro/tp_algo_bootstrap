@@ -1,0 +1,4 @@
+Exercice 1.6
+
+Ecrire un pseudo-code permettant d’échanger les valeurs de deux variables A et B, et ce quel que soit leur contenu
+préalable.

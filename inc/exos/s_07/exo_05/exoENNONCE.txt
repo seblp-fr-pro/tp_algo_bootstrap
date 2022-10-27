@@ -1,0 +1,4 @@
+Exercice 7.5
+
+Ecrivez l'algorithme qui recherche un mot saisi au clavier dans un dictionnaire. Le dictionnaire est supposé être codé
+dans un tableau préalablement rempli et trié.

@@ -1,0 +1,4 @@
+Exercice 10.4
+
+Même question, mais cette fois le carnet est supposé être trié par ordre alphabétique. L’individu doit donc être
+inséré au bon endroit dans le fichier.

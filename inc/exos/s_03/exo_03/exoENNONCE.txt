@@ -1,0 +1,4 @@
+Exercice 3.3
+
+Ecrire un algorithme qui demande trois noms à l’utilisateur et l’informe ensuite s’ils sont rangés ou non dans l’ordre
+alphabétique.

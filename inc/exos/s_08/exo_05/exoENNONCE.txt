@@ -1,0 +1,8 @@
+Exercice 8.5
+
+Mêmes questions, en remplaçant la ligne :
+T(k, m) ← k + m
+par
+T(k, m) ← 2 * k + (m + 1)
+puis par :
+T(k, m) ← (k + 1) + 4 * m

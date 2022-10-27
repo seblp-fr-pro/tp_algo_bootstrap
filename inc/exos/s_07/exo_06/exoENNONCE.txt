@@ -1,0 +1,4 @@
+Exercice 7.6
+
+a) Ecrire un algorithme qui calcule le plus grand écart dans un tableau de X entiers positifs.
+b) Ecrire un algorithme qui calcule le plus grand écart dans un tableau de X entiers positifs, comme négatifs.

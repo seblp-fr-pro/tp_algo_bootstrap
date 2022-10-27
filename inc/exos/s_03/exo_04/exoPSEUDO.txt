@@ -1,0 +1,13 @@
+Variables iNombre en entier
+
+DEBUT
+    ECRIRE "Entrez un nombre"
+    LIRE iNombre
+    SI (iNombre > 1) ALORS
+        ECRIRE "Votre nombre est positif"
+    SINONSI (iNombre < 1) ALORS
+	   ECRIRE "Votre nombre est négatif" 
+    SINON 
+	   ECRIRE "Votre nombre est le 0"
+    FIN SI
+FIN

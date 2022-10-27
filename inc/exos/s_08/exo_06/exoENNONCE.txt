@@ -1,0 +1,4 @@
+Exercice 8.6
+
+Soit un tableau T à deux dimensions (12, 8) préalablement rempli de valeurs numériques.
+Écrire un algorithme qui recherche la plus grande valeur au sein de ce tableau.
