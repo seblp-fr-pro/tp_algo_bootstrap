@@ -1,7 +1,7 @@
 <div class="row">
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <?php
-            $number_tab = $_GET['r'];
+            $number_tab = $_GET['tab'];
             switch($number_tab) {      
                 case 2:
                     echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="true">Ennoncé</a>';
