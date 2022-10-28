@@ -4,35 +4,35 @@
             $number_tab = $_GET['tab'];
             switch($number_tab) {      
                 case 2:
-                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="true">Ennoncé</a>';
-                    echo '<a class="nav-item nav-link active" id="nav-pseudo-tab" data-toggle="tab" href="#nav-pseudo" role="tab" aria-controls="nav-pseudo" aria-selected="false">PseudoCode</a>';    
+                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="false">Ennoncé</a>';
+                    echo '<a class="nav-item nav-link active" id="nav-pseudo-tab" data-toggle="tab" href="#nav-pseudo" role="tab" aria-controls="nav-pseudo" aria-selected="true">PseudoCode</a>';    
                     echo '<a class="nav-item nav-link" id="nav-js-tab" data-toggle="tab" href="#nav-js" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>'; 
                     echo '<a class="nav-item nav-link" id="nav-jq-tab" data-toggle="tab" href="#nav-jq" role="tab" aria-controls="nav-jq" aria-selected="false">JQ</a>'; 
-                    echo '<a class="nav-item nav-link" id="nav-php-tab" data-toggle="tab" href="#nav-php" role="tab" aria-controls="nav-php" aria-selected="false">PHP</a>';         
+                    echo '<a class="nav-item nav-link" id="nav-php-tab" data-toggle="tab" href="#nav-php" role="tab" aria-controls="nav-php" aria-selected="false">PHP</a>';
                 break;
 
                 case 3:
-                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="true">Ennoncé</a>';
+                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="false">Ennoncé</a>';
                     echo '<a class="nav-item nav-link" id="nav-pseudo-tab" data-toggle="tab" href="#nav-pseudo" role="tab" aria-controls="nav-pseudo" aria-selected="false">PseudoCode</a>';    
-                    echo '<a class="nav-item nav-link active" id="nav-js-tab" data-toggle="tab" href="#nav-js" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>'; 
+                    echo '<a class="nav-item nav-link active" id="nav-js-tab" data-toggle="tab" href="#nav-js" role="tab" aria-controls="nav-js" aria-selected="true">JS</a>'; 
                     echo '<a class="nav-item nav-link" id="nav-jq-tab" data-toggle="tab" href="#nav-jq" role="tab" aria-controls="nav-jq" aria-selected="false">JQ</a>'; 
-                    echo '<a class="nav-item nav-link" id="nav-php-tab" data-toggle="tab" href="#nav-php" role="tab" aria-controls="nav-php" aria-selected="false">PHP</a>';         
+                    echo '<a class="nav-item nav-link" id="nav-php-tab" data-toggle="tab" href="#nav-php" role="tab" aria-controls="nav-php" aria-selected="false">PHP</a>';
                 break;
 
                 case 4;
-                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="true">Ennoncé</a>';
+                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="false">Ennoncé</a>';
                     echo '<a class="nav-item nav-link" id="nav-pseudo-tab" data-toggle="tab" href="#nav-pseudo" role="tab" aria-controls="nav-pseudo" aria-selected="false">PseudoCode</a>';    
                     echo '<a class="nav-item nav-link" id="nav-js-tab" data-toggle="tab" href="#nav-js" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>'; 
-                    echo '<a class="nav-item nav-link active" id="nav-jq-tab" data-toggle="tab" href="#nav-jq" role="tab" aria-controls="nav-jq" aria-selected="false">JQ</a>'; 
+                    echo '<a class="nav-item nav-link active" id="nav-jq-tab" data-toggle="tab" href="#nav-jq" role="tab" aria-controls="nav-jq" aria-selected="true">JQ</a>'; 
                     echo '<a class="nav-item nav-link" id="nav-php-tab" data-toggle="tab" href="#nav-php" role="tab" aria-controls="nav-php" aria-selected="false">PHP</a>'; 
                 break;
 
                 case 5;
-                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="true">Ennoncé</a>';
+                    echo '<a class="nav-item nav-link" id="nav-ennonce-tab" data-toggle="tab" href="#nav-ennonce" role="tab" aria-controls="nav-ennonce" aria-selected="false">Ennoncé</a>';
                     echo '<a class="nav-item nav-link" id="nav-pseudo-tab" data-toggle="tab" href="#nav-pseudo" role="tab" aria-controls="nav-pseudo" aria-selected="false">PseudoCode</a>';    
                     echo '<a class="nav-item nav-link" id="nav-js-tab" data-toggle="tab" href="#nav-js" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>'; 
                     echo '<a class="nav-item nav-link" id="nav-jq-tab" data-toggle="tab" href="#nav-jq" role="tab" aria-controls="nav-jq" aria-selected="false">JQ</a>'; 
-                    echo '<a class="nav-item nav-link active" id="nav-php-tab" data-toggle="tab" href="#nav-php" role="tab" aria-controls="nav-php" aria-selected="false">PHP</a>'; 
+                    echo '<a class="nav-item nav-link active" id="nav-php-tab" data-toggle="tab" href="#nav-php" role="tab" aria-controls="nav-php" aria-selected="true">PHP</a>'; 
                 break;
                 
                 default:
@@ -70,7 +70,7 @@
     <div class="tab-pane fade" id="nav-js" role="tabpanel" aria-labelledby="nav-js-tab">
         <div class="row">
                 <?php
-                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&r=3" method="post">';
+                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
                     echo '<p><textarea id="JS" name="JS" rows="6" cols="120">' . $txtPRINCIPALjs . '</textarea></p>'; 
                 ?>
                 <button type="submit" class="btn btn-danger">Enregistrer JS</button>   
@@ -82,7 +82,7 @@
     <div class="tab-pane fade" id="nav-jq" role="tabpanel" aria-labelledby="nav-jq-tab">
         <div class="row">
                 <?php
-                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&r=4" method="post">';
+                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=4#nav-jq" method="post">';
                     echo '<p><textarea id="JQ" name="JQ" rows="6" cols="120">' . $txtPRINCIPALjq . '</textarea></p>';
                 ?>
                 <button type="submit" class="btn btn-danger">Enregistrer JQ</button>             
@@ -94,7 +94,7 @@
     <div class="tab-pane fade" id="nav-php" role="tabpanel" aria-labelledby="nav-php-tab">
         <div class="row">
                 <?php
-                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&r=5" method="post">';
+                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=5#nav-php" method="post">';
                     echo '<p><textarea id="PHP" name="PHP" rows="6" cols="120">' . $txtPRINCIPALphp . '</textarea></p>'; 
                 ?>
                 <button type="submit" class="btn btn-danger">Enregistrer PHP</button>
