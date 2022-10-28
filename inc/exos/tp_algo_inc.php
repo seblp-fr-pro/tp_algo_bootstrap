@@ -31,20 +31,32 @@
     </div>
     
     <div class="tab-pane fade" id="nav-js" role="tabpanel" aria-labelledby="nav-js-tab">
-        <?php
-            echo '<p><textarea id="JS" name="JS" rows="6" cols="120">' . $txtPRINCIPALjs . '</textarea></p>'; 
-        ?>            
+        <div class="row">
+            <?php
+                echo '<p><textarea id="JS" name="JS" rows="6" cols="120">' . $txtPRINCIPALjs . '</textarea></p>'; 
+            ?>
+            <button type="button" class="btn btn-danger">Enregistrer JS</button>   
+            <button type="button" class="btn btn-success">Executer JS</button>
+        </div>
     </div>
 
     <div class="tab-pane fade" id="nav-jq" role="tabpanel" aria-labelledby="nav-jq-tab">
-        <?php
-            echo '<p><textarea id="JQ" name="JQ" rows="6" cols="120">' . $txtPRINCIPALjq . '</textarea></p>'; 
-        ?>             
+        <div class="row">
+            <?php
+                echo '<p><textarea id="JQ" name="JQ" rows="6" cols="120">' . $txtPRINCIPALjq . '</textarea></p>';
+            ?>
+            <button type="button" class="btn btn-danger">Enregistrer JQ</button>             
+            <button type="button" class="btn btn-success">Executer JQ</button>
+        </div>
     </div>
 
     <div class="tab-pane fade" id="nav-php" role="tabpanel" aria-labelledby="nav-php-tab">
-        <?php
-            echo '<p><textarea id="PHP" name="PHP" rows="6" cols="120">' . $txtPRINCIPALphp . '</textarea></p>'; 
-        ?>    
+        <div class="row">
+            <?php
+                echo '<p><textarea id="PHP" name="PHP" rows="6" cols="120">' . $txtPRINCIPALphp . '</textarea></p>'; 
+            ?>
+            <button type="button" class="btn btn-danger">Enregistrer PHP</button>
+            <button type="button" class="btn btn-success">Executer PHP</button>
+        </div>
     </div>
 </div>
