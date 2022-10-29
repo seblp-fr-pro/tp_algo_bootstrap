@@ -25,33 +25,32 @@
             <!-- Specific JS file for tp_crud -->
                 <script src="js/tp_crud.js"></script>
 
-            <!-- GitHUB ACE Code Editor -->
+            <!-- GitHUB ACE Code Editor USED BY TP-ALGO -->
                 <script src="api/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
 
                 <script>
-                    // SCRIPT ACE for ENNONCE
+                    // SCRIPT ACE EDITOR for ENNONCE
                     var editorENNONCE = ace.edit("editorENNONCE");
-                    editorENNONCE.setTheme("api/ace-builds/src/theme/twilight");
-                    editorENNONCE.session.setMode("api/ace-builds/src/mode/javascript");
+                    editorENNONCE.setTheme("ace/src/theme/dracula");
 
-                    // SCRIPT ACE for PSEUDOCODE
+                    // SCRIPT ACE EDITOR for PSEUDOCODE
                     var editorPSEUDO = ace.edit("editorPSEUDO");
-                    editorPSEUDO.setTheme("api/ace-builds/src/theme/twilight");
-                    editorPSEUDO.session.setMode("api/ace-builds/src/mode/javascript");
+                    editorPSEUDO.setTheme("ace/src/theme/dracula");
 
-                    // SCRIPT ACE for JAVASCRIPT
+                    // SCRIPT ACE EDITOR for JAVASCRIPT
                     var editorJS = ace.edit("editorJS");
-                    editorJS.setTheme("api/ace-builds/src/theme/twilight");
-                    editorJS.session.setMode("api/ace-builds/src/mode/javascript");
+                    editorJS.setTheme("ace/src/theme/dracula");
+                    editorJS.session.setMode("ace/src/mode/javascript");
 
-                    // SCRIPT ACE for JQUERY
+                    // SCRIPT ACE EDITOR for JQUERY
                     var editorJQ = ace.edit("editorJQ");
-                    editorJQ.setTheme("api/ace-builds/src/theme/twilight");
-                    editorJQ.session.setMode("api/ace-builds/src/mode/javascript");
+                    editorJQ.setTheme("ace/src/theme/dracula");
+                    editorJQ.session.setMode("ace/src/mode/javascript");
 
-                    // SCRIPT ACE for PHP
+                    // SCRIPT ACE EDITOR for PHP
                     var editorPHP = ace.edit("editorPHP");
-                    editorPHP.setTheme("api/ace-builds/src/theme/twilight");
-                    editorPHP.session.setMode("api/ace-builds/src/mode/php");
+                    editorPHP.setTheme("ace/src/theme/dracula");
+                    editorPHP.session.setMode("ace/src/mode/php");
                 </script>
+
         <!-- ========================================================================= END of JS CUSTOM scripts ========================================================================= -->
