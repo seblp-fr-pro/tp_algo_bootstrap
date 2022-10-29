@@ -24,4 +24,12 @@
 
             <!-- Specific JS file for tp_crud -->
                 <script src="js/tp_crud.js"></script>
+
+            <!-- GitHUB ACE Code Editor -->
+                <script src="api/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
+                <script>
+                    var editor = ace.edit("editor");
+                    editor.setTheme("api/ace-builds/src/theme/dracula");
+                    editor.session.setMode("api/ace-builds/src/mode/javascript");
+                </script>
         <!-- ========================================================================= END of JS CUSTOM scripts ========================================================================= -->

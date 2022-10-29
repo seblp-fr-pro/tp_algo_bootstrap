@@ -44,12 +44,12 @@
                 break;
             }
 
-            echo "<title>TP Algo - S". $saison . " - Ex" . $exercice . "</title>";
-            $txtPRINCIPALennonce = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoENNONCE.txt');
-            $txtPRINCIPALpseudo = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPSEUDO.txt');
-            $txtPRINCIPALjs = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJS.js');
-            $txtPRINCIPALjq = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJQ.js');
-            $txtPRINCIPALphp = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPHP.php');
+            echo "<title>TP Algo - S". $saison . "-Ex" . $exercice . "</title>";
+            $txtENNONCE = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoENNONCE.txt');
+            $txtPSEUDO = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPSEUDO.txt');
+            $txtJS = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJS.js');
+            $txtJQ = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJQ.js');
+            $txtPHP = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPHP.php');
         ?>
     </div>
 </div>
@@ -57,21 +57,27 @@
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-ennonce" role="tabpanel" aria-labelledby="nav-ennonce-tab">
         <?php
-            echo '<p><textarea id="ENNONCE" name="ENNONCE" rows="6" cols="120">' . $txtPRINCIPALennonce . '</textarea></p>'; 
-        ?>      
+                echo '<form name="ENNONCEForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-ennonce" method="post">';
+                echo '<p><pre id="editor">' . $txtENNONCE . '</pre></p>';
+            ?>
+            <button type="submit" class="btn btn-danger">Enregistrer Énnoncé</button>
+        </form>
     </div>
     
     <div class="tab-pane fade" id="nav-pseudo" role="tabpanel"  aria-labelledby="nav-pseudo-tab">
-        <?php
-            echo '<p><textarea id="PSEUDO" name="PSEUDO" rows="6" cols="120">' . $txtPRINCIPALpseudo . '</textarea></p>'; 
-        ?>
+            <?php
+                echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
+                echo '<p><pre id="editor">' . $txtPSEUDO . '</pre></p>'; 
+            ?>
+            <button type="submit" class="btn btn-danger">Enregistrer PseudoCode</button>
+        </form>
     </div>
     
     <div class="tab-pane fade" id="nav-js" role="tabpanel" aria-labelledby="nav-js-tab">
         <div class="row">
                 <?php
                     echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
-                    echo '<p><textarea id="JS" name="JS" rows="6" cols="120">' . $txtPRINCIPALjs . '</textarea></p>'; 
+                    echo '<p><pre id="editor">' . $txtJS . '</pre></p>'; 
                 ?>
                 <button type="submit" class="btn btn-danger">Enregistrer JS</button>   
                 <button type="button" class="btn btn-success">Executer JS</button>
@@ -83,7 +89,7 @@
         <div class="row">
                 <?php
                     echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=4#nav-jq" method="post">';
-                    echo '<p><textarea id="JQ" name="JQ" rows="6" cols="120">' . $txtPRINCIPALjq . '</textarea></p>';
+                    echo '<p><pre id="editor">' . $txtJQ . '</pre></p>';
                 ?>
                 <button type="submit" class="btn btn-danger">Enregistrer JQ</button>             
                 <button type="button" class="btn btn-success">Executer JQ</button>
@@ -95,7 +101,7 @@
         <div class="row">
                 <?php
                     echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=5#nav-php" method="post">';
-                    echo '<p><textarea id="PHP" name="PHP" rows="6" cols="120">' . $txtPRINCIPALphp . '</textarea></p>'; 
+                    echo '<p><pre id="editor">' . $txtPHP . '</pre></p>';
                 ?>
                 <button type="submit" class="btn btn-danger">Enregistrer PHP</button>
                 <button type="button" class="btn btn-success">Executer PHP</button>
@@ -105,21 +111,27 @@
 </div>
 
 <?php
+    if(isset($_POST['PSEUDOForm']))
+    {
+        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPSEUDO.txt',$_POST['PSEUDOtxt'],FILE_APPEND);
+        echo "JS enregistré";
+    }
+
     if(isset($_POST['JSForm']))
     {
-        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJS.js',$_POST['JS'],FILE_APPEND);
+        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJS.js',$_POST['JStxt'],FILE_APPEND);
         echo "JS enregistré";
     }
 
     if(isset($_POST['JQForm']))
     {
-        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJQ.js',$_POST['JQ'],FILE_APPEND);
+        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJQ.js',$_POST['JQtxt'],FILE_APPEND);
         echo "JQ enregistré";
     }
 
     if(isset($_POST['PHPForm']))
     {
-        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exo.php',$_POST['PHP'],FILE_APPEND);
+        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exo.php',$_POST['PHPtxt'],FILE_APPEND);
         echo "PHP enregistré";
     }
 ?>
