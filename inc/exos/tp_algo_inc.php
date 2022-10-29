@@ -55,54 +55,54 @@
 </div>
 
 <div class="row">
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-ennonce" role="tabpanel" aria-labelledby="nav-ennonce-tab">
+                <?php
+                    echo '<form name="ENNONCEForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-ennonce" method="post">';
+                    echo '<p><pre id="editorENNONCE" class="myeditor">' . $txtENNONCE . '</pre></p>';
+                ?>
+                <button type="submit" class="btn btn-danger">Enregistrer Énnoncé</button>
+            </form>
+        </div>
+            
+        <div class="tab-pane fade" id="nav-pseudo" role="tabpanel"  aria-labelledby="nav-pseudo-tab">
+                <?php
+                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
+                    echo '<p><pre id="editorPSEUDO" class="myeditor">' . $txtPSEUDO . '</pre></p>'; 
+                ?>
+                <button type="submit" class="btn btn-danger">Enregistrer PseudoCode</button>
+            </form>
+        </div>
+            
+        <div class="tab-pane fade" id="nav-js" role="tabpanel" aria-labelledby="nav-js-tab">
+                <?php
+                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
+                    echo '<p><pre id="editorJS" class="myeditor">' . $txtJS . '</pre></p>'; 
+                ?>
+                <button type="submit" class="btn btn-danger">Enregistrer JS</button>   
+                <button type="button" class="btn btn-success">Executer JS</button>
+            </form>
+        </div>
 
-<div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-ennonce" role="tabpanel" aria-labelledby="nav-ennonce-tab">
-            <?php
-                echo '<form name="ENNONCEForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-ennonce" method="post">';
-                echo '<p><pre id="editor">' . $txtENNONCE . '</pre></p>';
-            ?>
-            <button type="submit" class="btn btn-danger">Enregistrer Énnoncé</button>
-        </form>
-    </div>
-    
-    <div class="tab-pane fade" id="nav-pseudo" role="tabpanel"  aria-labelledby="nav-pseudo-tab">
-            <?php
-                echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
-                echo '<p><pre id="editor">' . $txtPSEUDO . '</pre></p>'; 
-            ?>
-            <button type="submit" class="btn btn-danger">Enregistrer PseudoCode</button>
-        </form>
-    </div>
-    
-    <div class="tab-pane fade" id="nav-js" role="tabpanel" aria-labelledby="nav-js-tab">
-            <?php
-                echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
-                echo '<p><pre id="editor">' . $txtJS . '</pre></p>'; 
-            ?>
-            <button type="submit" class="btn btn-danger">Enregistrer JS</button>   
-            <button type="button" class="btn btn-success">Executer JS</button>
-        </form>
-    </div>
+        <div class="tab-pane fade" id="nav-jq" role="tabpanel" aria-labelledby="nav-jq-tab">
+                <?php
+                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=4#nav-jq" method="post">';
+                    echo '<p><pre id="editorJQ" class="myeditor">' . $txtJQ . '</pre></p>';
+                ?>
+                <button type="submit" class="btn btn-danger">Enregistrer JQ</button>             
+                <button type="button" class="btn btn-success">Executer JQ</button>
+            </form>
+        </div>
 
-    <div class="tab-pane fade" id="nav-jq" role="tabpanel" aria-labelledby="nav-jq-tab">
-            <?php
-                echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=4#nav-jq" method="post">';
-                echo '<p><pre id="editor">' . $txtJQ . '</pre></p>';
-            ?>
-            <button type="submit" class="btn btn-danger">Enregistrer JQ</button>             
-            <button type="button" class="btn btn-success">Executer JQ</button>
-        </form>
-    </div>
-
-    <div class="tab-pane fade" id="nav-php" role="tabpanel" aria-labelledby="nav-php-tab">
-            <?php
-                echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=5#nav-php" method="post">';
-                echo '<p><pre id="editor">' . $txtPHP . '</pre></p>';
-            ?>
-            <button type="submit" class="btn btn-danger">Enregistrer PHP</button>
-            <button type="button" class="btn btn-success">Executer PHP</button>
-        </form>
+        <div class="tab-pane fade" id="nav-php" role="tabpanel" aria-labelledby="nav-php-tab">
+                <?php
+                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=5#nav-php" method="post">';
+                    echo '<p><pre id="editorPHP" class="myeditor">' . $txtPHP . '</pre></p>';
+                ?>
+                <button type="submit" class="btn btn-danger">Enregistrer PHP</button>
+                <button type="button" class="btn btn-success">Executer PHP</button>
+            </form>
+        </div>
     </div>
 </div>
 

@@ -27,9 +27,31 @@
 
             <!-- GitHUB ACE Code Editor -->
                 <script src="api/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
+
                 <script>
-                    var editor = ace.edit("editor");
-                    editor.setTheme("api/ace-builds/src/theme/dracula");
-                    editor.session.setMode("api/ace-builds/src/mode/javascript");
+                    // SCRIPT ACE for ENNONCE
+                    var editorENNONCE = ace.edit("editorENNONCE");
+                    editorENNONCE.setTheme("api/ace-builds/src/theme/twilight");
+                    editorENNONCE.session.setMode("api/ace-builds/src/mode/javascript");
+
+                    // SCRIPT ACE for PSEUDOCODE
+                    var editorPSEUDO = ace.edit("editorPSEUDO");
+                    editorPSEUDO.setTheme("api/ace-builds/src/theme/twilight");
+                    editorPSEUDO.session.setMode("api/ace-builds/src/mode/javascript");
+
+                    // SCRIPT ACE for JAVASCRIPT
+                    var editorJS = ace.edit("editorJS");
+                    editorJS.setTheme("api/ace-builds/src/theme/twilight");
+                    editorJS.session.setMode("api/ace-builds/src/mode/javascript");
+
+                    // SCRIPT ACE for JQUERY
+                    var editorJQ = ace.edit("editorJQ");
+                    editorJQ.setTheme("api/ace-builds/src/theme/twilight");
+                    editorJQ.session.setMode("api/ace-builds/src/mode/javascript");
+
+                    // SCRIPT ACE for PHP
+                    var editorPHP = ace.edit("editorPHP");
+                    editorPHP.setTheme("api/ace-builds/src/theme/twilight");
+                    editorPHP.session.setMode("api/ace-builds/src/mode/javascript");
                 </script>
         <!-- ========================================================================= END of JS CUSTOM scripts ========================================================================= -->
