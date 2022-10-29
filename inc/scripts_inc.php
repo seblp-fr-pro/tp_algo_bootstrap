@@ -52,6 +52,6 @@
                     // SCRIPT ACE for PHP
                     var editorPHP = ace.edit("editorPHP");
                     editorPHP.setTheme("api/ace-builds/src/theme/twilight");
-                    editorPHP.session.setMode("api/ace-builds/src/mode/javascript");
+                    editorPHP.session.setMode("api/ace-builds/src/mode/php");
                 </script>
         <!-- ========================================================================= END of JS CUSTOM scripts ========================================================================= -->
