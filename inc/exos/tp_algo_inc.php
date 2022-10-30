@@ -45,11 +45,71 @@
             }
 
             echo "<title>TP Algo - S". $saison . "-Ex" . $exercice . "</title>";
-            $txtENNONCE = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoENNONCE.txt');
-            $txtPSEUDO = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPSEUDO.txt');
-            $txtJS = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJS.js');
-            $txtJQ = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJQ.js');
-            $txtPHP = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPHP.php');
+
+            // DISPLAY text in files inc/exos/s_xx/exo-xx/exoXXXX.XXX
+                // ExoENNONCE
+                    $txtENNONCE = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoENNONCE.txt');
+
+                // ExoPSEUDO
+                    $txtPSEUDO = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPSEUDO.txt');
+
+                // ExoJS
+                    $txtJS = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJS.js');
+
+                // ExoJQ
+                    $txtJQ = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJQ.js');
+                
+                // ExoPHP
+                    $txtPHP = file_get_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPHP.php');
+
+
+            // WRITE functions to write text on txtfiles
+                function writeENNONCE(){
+                    $fname=$txtENNONCE;
+                    $fh=fopen($fname,'w');
+                    $data=$_POST['texteENNONCE'];
+                    fwrite($fh,$data);
+                    fclose($fh);
+                }
+
+                function writePSEUDO(){
+                    $fname=$txtPSEUDO;
+                    $fh=fopen($fname,'w');
+                    $data=$_POST['textePSEUDO'];
+                    fwrite($fh,$data);
+                    fclose($fh);
+                }
+
+                function writeJS(){
+                    $fname=$txtJS;
+                    $fh=fopen($fname,'w');
+                    $data=$_POST['texteJS'];
+                    fwrite($fh,$data);
+                    fclose($fh);
+                }            
+
+                function writeJQ(){
+                    $fname=$txtJQ;
+                    $fh=fopen($fname,'w');
+                    $data=$_POST['texteJQ'];
+                    fwrite($fh,$data);
+                    fclose($fh);
+                }
+
+                function writePHP(){
+                    $fname=$txtPHP;
+                    $fh=fopen($fname,'w');
+                    $data=$_POST['textePHP'];
+                    fwrite($fh,$data);
+                    fclose($fh);
+                }
+
+            // Method POST for differents forms
+                if(isset($_POST['submitENNONCE'])){writeENNONCE();}
+                if(isset($_POST['submitPSEUDO'])){writePSEUDO();}
+                if(isset($_POST['submitJS'])){writeJS();}
+                if(isset($_POST['submitJQ'])){writeJQ();}
+                if(isset($_POST['submitPHP'])){writePHP();}
         ?>
     </div>
 </div>
@@ -57,78 +117,66 @@
 <div class="row">
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-ennonce" role="tabpanel" aria-labelledby="nav-ennonce-tab">
-                <?php
-                    echo '<form name="ENNONCEForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-ennonce" method="post">';
-                    echo '<p><pre id="editorENNONCE" class="myeditor">' . $txtENNONCE . '</pre></p>';
-                ?>
-                <button type="submit" class="btn btn-danger">Enregistrer Énnoncé</button>
-            </form>
+            <?php
+                echo <<<_END
+                    '<form action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-ennonce" method="post">'
+                        '<p><pre id="editorENNONCE" class="myeditor name="texteENNONCE">' . $txtENNONCE . '</pre></p>'
+                        
+                        <button type="submit" name="submitENNONCE" class="btn btn-danger">Enregistrer Énnoncé</button>
+                    </form>
+                _END;
+            ?>
         </div>
             
         <div class="tab-pane fade" id="nav-pseudo" role="tabpanel"  aria-labelledby="nav-pseudo-tab">
                 <?php
-                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
-                    echo '<p><pre id="editorPSEUDO" class="myeditor">' . $txtPSEUDO . '</pre></p>'; 
+                    echo <<<_END
+                        '<form action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-pseudo" method="post">'
+                            '<p><pre id="editorPSEUDO" class="myeditor name="textePSEUDO">' . $txtPSEUDO . '</pre></p>'
+
+                            <button type="submit" name="submitPSEUDO" class="btn btn-danger">Enregistrer PseudoCode</button>
+                        </form>
+                    _END;
                 ?>
-                <button type="submit" class="btn btn-danger">Enregistrer PseudoCode</button>
-            </form>
         </div>
             
         <div class="tab-pane fade" id="nav-js" role="tabpanel" aria-labelledby="nav-js-tab">
-                <?php
-                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">';
-                    echo '<p><pre id="editorJS" class="myeditor">' . $txtJS . '</pre></p>'; 
-                ?>
-                <button type="submit" class="btn btn-danger">Enregistrer JS</button>   
-                <button type="button" class="btn btn-success">Executer JS</button>
-            </form>
+            <?php
+                echo <<<_END
+                    <form action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-js" method="post">
+                        '<p><pre id="editorJS" class="myeditor name="texteJS">' . $txtJS . '</pre></p>'
+
+                        <button type="submit" name="submitJS" class="btn btn-danger">Enregistrer JS</button>
+                        <button type="button" class="btn btn-success">Exécuter JS</button>
+                    </form>
+                _END;
+            ?>
         </div>
 
         <div class="tab-pane fade" id="nav-jq" role="tabpanel" aria-labelledby="nav-jq-tab">
-                <?php
-                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=4#nav-jq" method="post">';
-                    echo '<p><pre id="editorJQ" class="myeditor">' . $txtJQ . '</pre></p>';
-                ?>
-                <button type="submit" class="btn btn-danger">Enregistrer JQ</button>             
-                <button type="button" class="btn btn-success">Executer JQ</button>
-            </form>
+            <?php
+                echo <<<_END
+                    '<form action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-jq" method="post">'
+                        '<p><pre id="editorJQ" class="myeditor name="texteJQ">' . $txtJQ . '</pre></p>'
+
+                        <button type="submit" name="submitJQ" class="btn btn-danger">Enregistrer JQ</button>
+                        <button type="button" class="btn btn-success">Exécuter JQ</button>
+                    </form>
+                _END;
+            ?>
         </div>
 
         <div class="tab-pane fade" id="nav-php" role="tabpanel" aria-labelledby="nav-php-tab">
-                <?php
-                    echo '<form name="JSForm" action="?s=' . $saison . '&e=' . $exercice . '&tab=5#nav-php" method="post">';
-                    echo '<p><pre id="editorPHP" class="myeditor">' . $txtPHP . '</pre></p>';
-                ?>
-                <button type="submit" class="btn btn-danger">Enregistrer PHP</button>
-                <button type="button" class="btn btn-success">Executer PHP</button>
-            </form>
+            <?php
+                echo <<<_END
+                    '<form action="?s=' . $saison . '&e=' . $exercice . '&tab=3#nav-php" method="post">'
+                        '<p><pre id="editorPHP" class="myeditor name="textePHP">' . $txtPHP . '</pre></p>'
+
+                        <button type="submit" name="submitPHP" class="btn btn-danger">Enregistrer PHP</button>
+                        <button type="button" class="btn btn-success">Exécuter PHP</button>
+                    </form>
+                _END;
+               ?>
         </div>
     </div>
 </div>
-
-<?php
-    if(isset($_POST['PSEUDOForm']))
-    {
-        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoPSEUDO.txt',$_POST['PSEUDOtxt'],FILE_APPEND);
-        echo "JS enregistré";
-    }
-
-    if(isset($_POST['JSForm']))
-    {
-        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJS.js',$_POST['JStxt'],FILE_APPEND);
-        echo "JS enregistré";
-    }
-
-    if(isset($_POST['JQForm']))
-    {
-        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exoJQ.js',$_POST['JQtxt'],FILE_APPEND);
-        echo "JQ enregistré";
-    }
-
-    if(isset($_POST['PHPForm']))
-    {
-        file_put_contents('inc/exos/s_' . $saison . '/exo_' . $exercice . '/exo.php',$_POST['PHPtxt'],FILE_APPEND);
-        echo "PHP enregistré";
-    }
-?>
-

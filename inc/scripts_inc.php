@@ -1,4 +1,4 @@
-        <!-- ========================================================================= BEGIN JS GENERIC scripts ========================================================================= -->
+        <!-- ============================================ BEGIN JS GENERIC scripts ============================================ -->
 
         <!-- jquery JS -->
         <script src="js/jquery/jquery-3.6.0.min.js"></script>
@@ -13,9 +13,9 @@
 
             <!-- specific tp_crud JS -->
             <script src="js/tp_crud.js"></script>
-        <!-- ========================================================================= End of JS GENERIC scripts ========================================================================= -->
+        <!-- ============================================ End of JS GENERIC scripts ============================================ -->
 
-        <!-- ========================================================================= BEGIN of JS CUSTOM scripts ========================================================================= -->
+        <!-- ============================================ BEGIN of JS CUSTOM scripts ============================================ -->
             <!-- Main JS for ALL and COMMON tp_exercices -->
                 <script src="js/main.js"></script>
 
@@ -29,28 +29,28 @@
                 <script src="api/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
 
                 <script>
-                    // SCRIPT ACE EDITOR for ENNONCE
+                    // SCRIPT ACE EDITOR for TP-ALGO ENNONCE
                     var editorENNONCE = ace.edit("editorENNONCE");
                     editorENNONCE.setTheme("ace/src/theme/dracula");
 
-                    // SCRIPT ACE EDITOR for PSEUDOCODE
+                    // SCRIPT ACE EDITOR for TP-ALGO PSEUDOCODE
                     var editorPSEUDO = ace.edit("editorPSEUDO");
                     editorPSEUDO.setTheme("ace/src/theme/dracula");
 
-                    // SCRIPT ACE EDITOR for JAVASCRIPT
+                    // SCRIPT ACE EDITOR for TP-ALGO JAVASCRIPT
                     var editorJS = ace.edit("editorJS");
                     editorJS.setTheme("ace/src/theme/dracula");
                     editorJS.session.setMode("ace/src/mode/javascript");
 
-                    // SCRIPT ACE EDITOR for JQUERY
+                    // SCRIPT ACE EDITOR for TP-ALGO JQUERY
                     var editorJQ = ace.edit("editorJQ");
                     editorJQ.setTheme("ace/src/theme/dracula");
                     editorJQ.session.setMode("ace/src/mode/javascript");
 
-                    // SCRIPT ACE EDITOR for PHP
+                    // SCRIPT ACE EDITOR for TP-ALGO PHP
                     var editorPHP = ace.edit("editorPHP");
                     editorPHP.setTheme("ace/src/theme/dracula");
                     editorPHP.session.setMode("ace/src/mode/php");
                 </script>
 
-        <!-- ========================================================================= END of JS CUSTOM scripts ========================================================================= -->
+        <!-- ============================================ END of JS CUSTOM scripts ==================================================== -->
