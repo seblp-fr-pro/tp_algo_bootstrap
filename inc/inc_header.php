@@ -19,17 +19,16 @@
 
             switch ($exercice) {
                 // TP CRUD found
-                case 'tp_crud':
-                    require('inc/exos/inc_tp_crud.php');
-                break;
+                    case 'tp_crud':
+                        require('inc/exos/inc_tp_crud.php');
+                    break;
                 
                 // Exercice NOT FOUND in all cases then display default EXERCICE FORM (TP_ALGO)
-                default:
-                    require('inc/exos/inc_tp_algo.php');
-                break;
+                    default:
+                        require('inc/exos/inc_tp_algo.php');
+                    break;
             }
         
         // =============================== End of TRY to identify exercice ==============================================
     ?>
-    </div>
 </div>
