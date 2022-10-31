@@ -150,7 +150,7 @@
         </li>
 
     <!-- Saison 10 -->
-    <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             S10</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -171,7 +171,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             CRUD</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <ul><a class="dropdown-item" href="#exercice01&tab=1">Ex01</a></ul>
+                <ul><a class="dropdown-item" href="?s=tp_crud">Ex01</a></ul>
             </div>
         </li>
 </nav>

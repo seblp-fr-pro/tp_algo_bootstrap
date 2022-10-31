@@ -29,13 +29,14 @@
                 <script src="api/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
 
                 <script>
+
                     // SCRIPT ACE EDITOR for TP-ALGO ENNONCE
-                    var editorENNONCE = ace.edit("editorENNONCE");
-                    editorENNONCE.setTheme("ace/src/theme/dracula");
+                    var editorCONSIGNES = ace.edit("editorCONSIGNES");
+                    editorCONSIGNES.setTheme("ace/src/theme/dracula");
 
                     // SCRIPT ACE EDITOR for TP-ALGO PSEUDOCODE
-                    var editorPSEUDO = ace.edit("editorPSEUDO");
-                    editorPSEUDO.setTheme("ace/src/theme/dracula");
+                    var editorPSEUDOCODE = ace.edit("editorPSEUDOCODE");
+                    editorPSEUDOCODE.setTheme("ace/src/theme/dracula");
 
                     // SCRIPT ACE EDITOR for TP-ALGO JAVASCRIPT
                     var editorJS = ace.edit("editorJS");
@@ -51,6 +52,7 @@
                     var editorPHP = ace.edit("editorPHP");
                     editorPHP.setTheme("ace/src/theme/dracula");
                     editorPHP.session.setMode("ace/src/mode/php");
+                    
                 </script>
 
         <!-- ============================================ END of JS CUSTOM scripts ==================================================== -->

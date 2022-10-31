@@ -22,7 +22,6 @@
                             echo <<< _END
                             <a class="nav-item nav-link" id="nav-$tab_name-tab" data-toggle="tab" href="#nav-$tab_name" role="tab" aria-controls="nav-$tab_name" aria-selected="false">$tab_name</a>
                             _END;
-
                 }
 
                 foreach ($tab_list as $tab_name){
@@ -48,51 +47,16 @@
                     // Method POST with differents forms
                         if(isset($_POST["submit$tab_name_CAP"])){write($tab_name_CAP);}
                 }
-
-
-
-            switch($number_tab) {      
-                case 2:
-
-                break;
-                
-                default:
-
-                break;
-            }
-
-
-
-
-
-
-
         ?>
     </div>
 </div>
 
 <div class="row">
     <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-ennonce" role="tabpanel" aria-labelledby="nav-ennonce-tab">
+        <div class="tab-pane fade show active" id="nav-consignes" role="tabpanel" aria-labelledby="nav-consignes-tab">
             <?php
 
             ?>
         </div>
     </div>
 </div>
-
-
-
-
-// Given these variables ...
-$nameTypes    = array("first", "last", "company");
-$name_first   = "John";
-$name_last    = "Doe";
-$name_company = "PHP.net";
-
-// Then this loop is ...
-foreach($nameTypes as $type)
-  print ${"name_$type"} . "\n";
-
-// ... equivalent to this print statement.
-print "$name_first\n$name_last\n$name_company\n";
