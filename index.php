@@ -12,9 +12,9 @@
 
 </head>
 
-<body>
+<body class="bg-dark">
 
-    <div class="container">
+    <div class="container bg-dark">
         <!-- NAV MENU container used by this website -->
             <?php require('inc/inc_nav_menu.php');?>
 
