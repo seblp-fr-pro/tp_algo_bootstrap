@@ -39,7 +39,6 @@
                             break;
                         }
 
-
                     // UPPERCASE $tab_name as $tab_name_CAP
                         $tab_name_CAP = strtoupper($tab_name);
 
@@ -48,22 +47,25 @@
                             ${"txt$tab_name_CAP"} = file_get_contents($exo_file_name);
 
                             echo <<< _END
-                            <a class="nav-item nav-link" id="nav-$tab_name-tab" data-toggle="tab" href="#nav-$tab_name" role="tab" aria-controls="nav-$tab_name" aria-selected="false">$tab_name</a>
+                                <a class="nav-item nav-link" id="nav-$tab_name-tab" data-toggle="tab" href="#nav-$tab_name" role="tab" aria-controls="nav-$tab_name" aria-selected="false">$tab_name</a>
                             _END;
                 }
 
                 foreach ($tab_list as $tab_name){
                     // Display each TAB content
                         echo <<<_END
-                            TEST
-                            <form action="?s=$saison&e=$exercice&tab=1#nav-$tab_name" method="post">
-                                <p><pre id="editor$tab_name_CAP" class="myeditor" name="texte$tab_name_CAP">${"txt$tab_name_CAP"}</pre></p>
+                            <div class="row">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-$tab_name" role="tabpanel" aria-labelledby="nav-$tab_name-tab">
+                                        <form action="?s=$saison&e=$exercice&tab=1#nav-$tab_name" method="post">
+                                            <p><pre id="editor$tab_name_CAP" class="myeditor" name="texte$tab_name_CAP">${"txt$tab_name_CAP"}</pre></p>
 
-                                TEST2
-
-                                <button type="submit" name="submit$tab_name_CAP" class="btn btn-danger">Enregistrer $tab_name_CAP</button>
-                                <button type="button" class="btn btn-success">Exécuter $tab_name_CAP</button>
-                            </form>
+                                            <button type="submit" name="submit$tab_name_CAP" class="btn btn-danger">Enregistrer $tab_name_CAP</button>
+                                            <button type="button" class="btn btn-success">Exécuter $tab_name_CAP</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         _END;
 
                     // WRITE functions to write text on txtfiles
@@ -79,15 +81,5 @@
                         if(isset($_POST["submit$tab_name_CAP"])){write($tab_name_CAP);}
                 }
         ?>
-    </div>
-</div>
-
-<div class="row">
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-consignes" role="tabpanel" aria-labelledby="nav-consignes-tab">
-            <?php
-
-            ?>
-        </div>
     </div>
 </div>
