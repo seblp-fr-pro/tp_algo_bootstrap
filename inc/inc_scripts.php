@@ -31,12 +31,12 @@
                 <script>
 
                     // SCRIPT ACE EDITOR for TP-ALGO ENNONCE
-                    var editorCONSIGNES = ace.edit("editorCONSIGNES");
-                    editorCONSIGNES.setTheme("ace/src/theme/dracula");
+                    var editorConsignes = ace.edit("editorConsignes");
+                    editorConsignes.setTheme("ace/src/theme/dracula");
 
                     // SCRIPT ACE EDITOR for TP-ALGO PSEUDOCODE
-                    var editorPSEUDOCODE = ace.edit("editorPSEUDOCODE");
-                    editorPSEUDOCODE.setTheme("ace/src/theme/dracula");
+                    var editorPseudoCode = ace.edit("editorPseudoCode");
+                    editorPseudoCode.setTheme("ace/src/theme/dracula");
 
                     // SCRIPT ACE EDITOR for TP-ALGO JAVASCRIPT
                     var editorJS = ace.edit("editorJS");
