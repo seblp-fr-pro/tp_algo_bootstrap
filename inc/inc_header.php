@@ -28,7 +28,7 @@
                         require('inc/exos/inc_tp_algo.php');
                     break;
             }
-        
+
         // =============================== End of TRY to identify exercice ==============================================
     ?>
 </div>
